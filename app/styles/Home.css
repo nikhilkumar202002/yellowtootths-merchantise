@@ -1,0 +1,49 @@
+/* Ensure the parent is relative so video is positioned inside it */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Adjust height as needed */
+    overflow: hidden;
+    display: flex;
+    align-items: end;
+    justify-content: left;
+}
+
+/* The Video Styling */
+.banner-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This makes it act like 'background-size: cover' */
+    z-index: 0; /* Send to back */
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* 40% black opacity */
+    z-index: 1;
+}
+
+/* Ensure content sits on top of video and overlay */
+.banner-container {
+    position: relative;
+    z-index: 2; /* Bring to front */
+    color: white;
+}
+
+.banner-content{
+    line-height: 52px;
+}
+.banner-content h1{
+    font-size: 65px;
+}
+.banner-content p{
+    font-size: 17px;
+    font-weight: 300;
+}

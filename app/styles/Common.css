@@ -1,0 +1,26 @@
+.navbar-menu-items a{
+    font-family: var(--font-geist-sans);
+    color: white;
+    font-weight: 300;
+    font-size: 16px;
+}
+.navbar-right-item{
+    color: white;
+    font-size: 18px;
+}
+.navbar-inner-top-item{
+    color: white;
+    font-size: 12.5px;
+    font-weight: 300;
+}
+.navbar-top{
+    padding: 8px 0px;
+}
+.navbar-ticker{
+    background-color: rgb(224, 224, 224);
+    color: black;
+    padding: 6px 0px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500
+}
